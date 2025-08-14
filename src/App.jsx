@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from "../src/pages/Home";
 import CarListingsPage from "../src/pages/CarListings";
 import FeaturedCars from "../src/components/car/FeaturedCars";
@@ -21,7 +21,7 @@ function App() {
   );
 
   return (
-    <Router>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="flex flex-col min-h-screen">
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <main className="flex-grow">
@@ -44,7 +44,7 @@ function App() {
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
