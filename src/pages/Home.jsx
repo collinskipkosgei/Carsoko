@@ -23,11 +23,11 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg max-w-4xl w-full">
             <h1 className="text-4xl md:text-5xl text-center font-bold mb-6">
-              Find your <span className="text-red-600 underline">perfect</span> car
+              Dream. Drive. <span className="text-red-600 underline"></span> Own. 
             </h1>
             <div className="grid md:grid-cols-4 gap-4 items-end">
-              <input type="text" placeholder="Car Make" className="p-3 border rounded-md w-full" />
-              <input type="text" placeholder="Car Model" className="p-3 border rounded-md w-full" />
+              <input type="text" placeholder="Car Type" className="p-3 border rounded-md w-full" />
+              <input type="text" placeholder="Model" className="p-3 border rounded-md w-full" />
               <input type="text" placeholder="Price Range" className="p-3 border rounded-md w-full" />
               <button className="bg-blue-600 text-white flex items-center justify-center p-3 rounded-md w-full hover:bg-blue-700 transition">
                 Search
