@@ -10,8 +10,8 @@ This is a frontend-only React + Redux demo implementing the Car Sokoni project r
 2. `npm start`
 
 Demo login credentials (mock):
-- email: test@carsokoni.co.ke
-- password: password123
+- email: cliffton15@gmail.com
+- password:@Qwerty123 
 
 Notes:
 - `node_modules` not included in the zip. If you want, I can also produce a GitHub repo structure.
