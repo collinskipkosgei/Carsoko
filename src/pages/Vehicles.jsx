@@ -11,7 +11,7 @@ import { addToCart } from "../store/slices/cartSlice";
  */
 
 const vehicles = [
-  { id: 1, name: "Toyota Harrier", image: "https://images.unsplash.com/photo-1650436795838-6a9a214129d3?q=80&w=1163&auto=format&fit=crop", priceKES: 2800000 },
+  { id: 1, name: "Blue Chevrolet", image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=870&auto=format&fit=crop", priceKES: 12800000 },
   { id: 2, name: "Mazda CX-5", image: "https://images.unsplash.com/photo-1614934415583-8da3f89f45ad?q=80&w=764&auto=format&fit=crop", priceKES: 3400000 },
   { id: 3, name: "BMW X5", image: "https://images.unsplash.com/photo-1590177059002-a09b88ab1167?q=80&w=1175&auto=format&fit=crop", priceKES: 9800000 },
 ];

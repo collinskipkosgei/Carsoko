@@ -26,12 +26,9 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img
-            src="https://carsoko.net/static/assets/icons/final.png"
-            alt="Carsokoni Logo"
-            className="h-10 w-auto"
-          />
+         <span className='font-bold text-xl'>Carsokoni</span>
         </Link>
+        
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-1 items-center space-x-12">

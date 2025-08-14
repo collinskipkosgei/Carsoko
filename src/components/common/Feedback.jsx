@@ -3,31 +3,31 @@ import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    name: "James Otieno",
-    location: "Nairobi, Kenya",
+    name: "Steven Kobbs",
+    location: "Nakuru, Kenya",
     message:
       "Car Soko made my car search so easy! I found my dream car in less than a week. Highly recommend!",
     rating: 5,
     image:
-      "https://randomuser.me/api/portraits/men/75.jpg",
+      "https://randomuser.me/api/portraits/men/25.jpg",
   },
   {
-    name: "Fatma Abdalla",
+    name: "Ajia Abdalla",
     location: "Mombasa, Kenya",
     message:
-      "Excellent customer support and amazing deals. Their after-sales service is top notch.",
+      "They genuinely care about their customers, offering real value through great deals and reliable support long after the sale.",
     rating: 4,
     image:
-      "https://randomuser.me/api/portraits/women/65.jpg",
+      "https://randomuser.me/api/portraits/women/25.jpg",
   },
   {
-    name: "Brian Kipchumba",
+    name: "Idris khan",
     location: "Eldoret, Kenya",
     message:
       "Smooth process from start to finish. Car Soko gave me confidence in every step of the purchase.",
     rating: 5,
     image:
-      "https://randomuser.me/api/portraits/men/45.jpg",
+      "https://randomuser.me/api/portraits/men/65.jpg",
   },
 ];
 

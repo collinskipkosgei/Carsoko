@@ -11,63 +11,63 @@
   },
   {
     "id": 2,
-    "name": "Mazda Demio 2016",
+    "name": "Mazda Atenza 2024",
     "brand": "Mazda",
     "price": 950000,
-    "year": 2016,
-    "mileage": 67000,
+    "year": 2024,
+    "mileage": 40000,
     "location": "Mombasa",
-    "image": "/images/cars/mazda_demio_2016.jpg"
+    "image": "/images/cars/mazda_atenza_2024.jpg"
   },
   {
     "id": 3,
-    "name": "Nissan X-Trail 2017",
+    "name": "Nissan X-Trail 2020",
     "brand": "Nissan",
     "price": 2100000,
-    "year": 2017,
+    "year": 2020,
     "mileage": 48000,
     "location": "Kisumu",
-    "image": "/images/cars/nissan_xtrail_2017.jpg"
+    "image": "/images/cars/nissan_xtrail_2020.jpg"
   },
   {
     "id": 4,
-    "name": "Subaru Forester 2015",
+    "name": "Subaru Forester 2025",
     "brand": "Subaru",
-    "price": 1900000,
-    "year": 2015,
+    "price": 2900000,
+    "year": 2025,
     "mileage": 82000,
     "location": "Nakuru",
-    "image": "/images/cars/subaru_forester_2015.jpg"
+    "image": "/images/cars/subaru_forester_2025.jpg"
   },
   {
     "id": 5,
-    "name": "Honda Fit 2016",
+    "name": "Honda Fit 2020",
     "brand": "Honda",
-    "price": 880000,
-    "year": 2016,
+    "price": 2380000,
+    "year": 2020,
     "mileage": 72000,
     "location": "Eldoret",
-    "image": "/images/cars/honda_fit_2016.jpg"
+    "image": "/images/cars/honda_fit_2020.jpg"
   },
   {
     "id": 6,
-    "name": "Toyota Prado TX 2019",
+    "name": "Toyota Prado TX 2018",
     "brand": "Toyota",
-    "price": 7200000,
-    "year": 2019,
+    "price": 6800000,
+    "year": 2018,
     "mileage": 39000,
     "location": "Nairobi",
-    "image": "/images/cars/toyota_prado_2019.jpg"
+    "image": "/images/cars/toyota_prado_2018.jpg"
   },
   {
     "id": 7,
-    "name": "Volkswagen Golf GTI 2017",
+    "name": "Volkswagen Golf GTI 2020",
     "brand": "Volkswagen",
-    "price": 3200000,
-    "year": 2017,
+    "price": 4200000,
+    "year": 2020,
     "mileage": 45000,
     "location": "Mombasa",
-    "image": "/images/cars/vw_golf_gti_2017.jpg"
+    "image": "/images/cars/vw_golf_gti_2020.jpg"
   },
   {
     "id": 8,
@@ -181,13 +181,13 @@
   },
   {
     "id": 19,
-    "name": "Mitsubishi Lancer 2015",
+    "name": "Mitsubishi Lancer 2009",
     "brand": "Mitsubishi",
     "price": 1350000,
-    "year": 2015,
+    "year": 2009,
     "mileage": 88000,
-    "location": "Eldoret",
-    "image": "/images/cars/mitsubishi_lancer_2015.jpg"
+    "location": "Nairobi",
+    "image": "/images/cars/mitsubishi_lancer_2009.jpg"
   },
   {
     "id": 20,

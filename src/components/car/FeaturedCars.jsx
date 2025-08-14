@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 /**
  * FeaturedCars
@@ -9,11 +10,12 @@ import { useNavigate } from "react-router-dom";
  */
 
 const cars = [
-  { id: 1, name: "Toyota Harrier", image: "https://images.unsplash.com/photo-1650436795838-6a9a214129d3?q=80&w=1163&auto=format&fit=crop", priceKES: 2800000, desc: "Reliable SUV, comfortable and fuel efficient." },
-  { id: 2, name: "Mazda CX-5", image: "https://images.unsplash.com/photo-1614934415583-8da3f89f45ad?q=80&w=764&auto=format&fit=crop", priceKES: 3400000, desc: "Sporty compact SUV with great handling." },
-  { id: 3, name: "BMW X5", image: "https://images.unsplash.com/photo-1590177059002-a09b88ab1167?q=80&w=1175&auto=format&fit=crop", priceKES: 9800000, desc: "Luxury performance SUV." },
-  { id: 4, name: "Mercedes-Benz C-Class", image: "https://images.unsplash.com/photo-1475609678816-d013f834a053?q=80&w=1170&auto=format&fit=crop", priceKES: 7600000, desc: "Comfort and elegance in one package." },
-  { id: 5, name: "Audi Q5", image: "https://images.unsplash.com/photo-1637677121980-6f39c0b61500?q=80&w=752&auto=format&fit=crop", priceKES: 8200000, desc: "Premium crossover with modern tech." },
+  { id: 1, name: "Blue Chevrolet", image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=870&auto=format&fit=crop", priceKES: 12800000, desc: "Reliable SUV, comfortable and fuel efficient.", specs: { engine: "2.0L", transmission: "Automatic", mileage: "12 km/l", seats: 5 } },
+  { id: 2, name: "Ford", image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=870&auto=format&fit=crop", priceKES: 7400000, desc: "Sporty compact SUV with great handling.", specs: { engine: "2.5L", transmission: "Automatic", mileage: "11 km/l", seats: 5 } },
+  { id: 3, name: "Mazda Atenza", image: "https://imgs.search.brave.com/rBODgBp3xSjAlqot7lFTJ-6rMpnOqNYkPiaaPCn5anM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGMtdi5jb20vY2Ru/L2N2bWF0ZXJpYWxz/L21vZGVsaW1hZ2Vz/L2dhbGxlcnkvNS8y/MzExMzIuanBnP3dp/ZHRoPTYwJmhlaWdo/dD00NSZ0eXBlPXJl/c2l6ZQ", priceKES: 3800000, desc: "Luxury performance Sedan.", specs: { engine: "3.0L", transmission: "Automatic", mileage: "9 km/l", seats: 5 } },
+  { id: 4, name: "Mercedes-Benz C-Class", image: "https://imgs.search.brave.com/GTXAHP9FkfSyKAQSgI8UfFOV9YjAYfNelEtZntFFdUo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNhcmJ1enpp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNS8wNS9j/cm9wcGVkLTEzYTg3/Ni0xLmpwZz9xPTQ5/JmZpdD1jcm9wJnc9/MzYwJmg9MjQwJmRw/cj0y", priceKES: 7600000, desc: "Comfort and elegance in one package.", specs: { engine: "2.0L", transmission: "Automatic", mileage: "10 km/l", seats: 5 } },
+  { id: 5, name: "Audi Q5", image: "https://imgs.search.brave.com/TmFh--eB74RGYTJTmXrMqqjibdosj_1UjFZ_-S8Q320/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9zdGlt/Zy5jYXJkZWtoby5j/b20vaW1hZ2VzL2Nh/cmV4dGVyaW9yaW1h/Z2VzLzYzMHg0MjAv/QXVkaS9RNS8xMDU1/Ni8xNjg5NTk0NDE2/OTI1L2Zyb250LWxl/ZnQtc2lkZS00Ny5q/cGc_dHI9dy0yMzA", priceKES: 8200000, desc: "Premium crossover with modern tech.", specs: { engine: "2.0L", transmission: "Automatic", mileage: "10 km/l", seats: 5 } },
+  { id: 6, name: "Ford Ranger Lariat", image: "https://imgs.search.brave.com/mEPnX8LEygoNFsfLG0YuWFpyDHMwLTzTPoHSsrWQUgk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy8yMDI0/LWZvcmQtcmFuZ2Vy/LWxhcmlhdC0yMDUt/NjZmZDViNzg5ZGMx/YS5qcGc_Y3JvcD0w/LjcyMXh3OjAuNjA3/eGg7MC4yMjl4dyww/LjMwMHhoJnJlc2l6/ZT0xMjAwOio", priceKES: 15000000, desc: "Rugged and reliable off-road SUV.", specs: { engine: "4.5L", transmission: "Automatic", mileage: "8 km/l", seats: 7 } },
 ];
 
 const KES = (n) => new Intl.NumberFormat("en-KE", { style: "currency", currency: "KES", maximumFractionDigits: 0 }).format(n);
@@ -23,6 +25,7 @@ export default function FeaturedCars() {
   const [search, setSearch] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const filtered = cars.filter((c) => {
     const matchesName = c.name.toLowerCase().includes(search.trim().toLowerCase());
@@ -80,7 +83,19 @@ export default function FeaturedCars() {
                         View Details
                       </button>
                       <button
-                        onClick={() => navigate(`/vehicles?highlight=${car.id}`)}
+                        onClick={() => {
+                          dispatch({
+                            type: 'cart/addToCart',
+                            payload: {
+                              id: car.id,
+                              name: car.name,
+                              price: car.priceKES,
+                              image: car.image,
+                              quantity: 1
+                            }
+                          });
+                          navigate('/cart');
+                        }}
                         className="px-3 py-1 border rounded hover:bg-gray-100 transition"
                       >
                         Buy / Add

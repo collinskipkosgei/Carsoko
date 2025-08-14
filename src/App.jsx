@@ -29,7 +29,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<Contacts />} />
             <Route path="/cars" element={<CarListingsPage />} />
-            <Route path="/cart" element={<CartPage />} />
+            <Route path="/listings" element={<CarListingsPage />} />
+            <Route path="/cart" element={isLoggedIn ? <CartPage /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/featured" element={<FeaturedCars />} />
             <Route path="/vehicles" element={<Vehicles />} />
