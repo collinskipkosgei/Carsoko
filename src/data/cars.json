@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota Corolla 2018",
+    "brand": "Toyota",
+    "price": 1750000,
+    "year": 2018,
+    "mileage": 54000,
+    "location": "Nairobi",
+    "image": "/images/cars/toyota_corolla_2018.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mazda Demio 2016",
+    "brand": "Mazda",
+    "price": 950000,
+    "year": 2016,
+    "mileage": 67000,
+    "location": "Mombasa",
+    "image": "/images/cars/mazda_demio_2016.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Nissan X-Trail 2017",
+    "brand": "Nissan",
+    "price": 2100000,
+    "year": 2017,
+    "mileage": 48000,
+    "location": "Kisumu",
+    "image": "/images/cars/nissan_xtrail_2017.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Subaru Forester 2015",
+    "brand": "Subaru",
+    "price": 1900000,
+    "year": 2015,
+    "mileage": 82000,
+    "location": "Nakuru",
+    "image": "/images/cars/subaru_forester_2015.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Honda Fit 2016",
+    "brand": "Honda",
+    "price": 880000,
+    "year": 2016,
+    "mileage": 72000,
+    "location": "Eldoret",
+    "image": "/images/cars/honda_fit_2016.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Toyota Prado TX 2019",
+    "brand": "Toyota",
+    "price": 7200000,
+    "year": 2019,
+    "mileage": 39000,
+    "location": "Nairobi",
+    "image": "/images/cars/toyota_prado_2019.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Volkswagen Golf GTI 2017",
+    "brand": "Volkswagen",
+    "price": 3200000,
+    "year": 2017,
+    "mileage": 45000,
+    "location": "Mombasa",
+    "image": "/images/cars/vw_golf_gti_2017.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mitsubishi Outlander 2015",
+    "brand": "Mitsubishi",
+    "price": 1750000,
+    "year": 2015,
+    "mileage": 85000,
+    "location": "Kisumu",
+    "image": "/images/cars/mitsubishi_outlander_2015.jpg"
+  },
+  {
+    "id": 9,
+    "name": "BMW X5 2018",
+    "brand": "BMW",
+    "price": 6800000,
+    "year": 2018,
+    "mileage": 41000,
+    "location": "Nairobi",
+    "image": "/images/cars/bmw_x5_2018.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mercedes-Benz C200 2017",
+    "brand": "Mercedes-Benz",
+    "price": 5500000,
+    "year": 2017,
+    "mileage": 50000,
+    "location": "Nakuru",
+    "image": "/images/cars/mercedes_c200_2017.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Toyota Axio 2015",
+    "brand": "Toyota",
+    "price": 1250000,
+    "year": 2015,
+    "mileage": 91000,
+    "location": "Eldoret",
+    "image": "/images/cars/toyota_axio_2015.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Mazda CX-5 2018",
+    "brand": "Mazda",
+    "price": 3500000,
+    "year": 2018,
+    "mileage": 37000,
+    "location": "Nairobi",
+    "image": "/images/cars/mazda_cx5_2018.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Toyota Harrier 2017",
+    "brand": "Toyota",
+    "price": 3800000,
+    "year": 2017,
+    "mileage": 52000,
+    "location": "Mombasa",
+    "image": "/images/cars/toyota_harrier_2017.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Suzuki Swift 2016",
+    "brand": "Suzuki",
+    "price": 870000,
+    "year": 2016,
+    "mileage": 75000,
+    "location": "Kisumu",
+    "image": "/images/cars/suzuki_swift_2016.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Nissan Note 2015",
+    "brand": "Nissan",
+    "price": 750000,
+    "year": 2015,
+    "mileage": 93000,
+    "location": "Nairobi",
+    "image": "/images/cars/nissan_note_2015.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Toyota Land Cruiser V8 2020",
+    "brand": "Toyota",
+    "price": 11500000,
+    "year": 2020,
+    "mileage": 25000,
+    "location": "Nairobi",
+    "image": "/images/cars/toyota_landcruiser_v8_2020.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Subaru Impreza 2016",
+    "brand": "Subaru",
+    "price": 1550000,
+    "year": 2016,
+    "mileage": 69000,
+    "location": "Mombasa",
+    "image": "/images/cars/subaru_impreza_2016.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Honda CR-V 2017",
+    "brand": "Honda",
+    "price": 3200000,
+    "year": 2017,
+    "mileage": 54000,
+    "location": "Nakuru",
+    "image": "/images/cars/honda_crv_2017.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Mitsubishi Lancer 2015",
+    "brand": "Mitsubishi",
+    "price": 1350000,
+    "year": 2015,
+    "mileage": 88000,
+    "location": "Eldoret",
+    "image": "/images/cars/mitsubishi_lancer_2015.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Volkswagen Passat 2016",
+    "brand": "Volkswagen",
+    "price": 2500000,
+    "year": 2016,
+    "mileage": 60000,
+    "location": "Nairobi",
+    "image": "/images/cars/vw_passat_2016.jpg"
+  }
+]
