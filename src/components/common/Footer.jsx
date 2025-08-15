@@ -25,11 +25,6 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-                <img 
-                  src="https://carsoko.net/static/assets/icons/final.png" 
-                  alt="Car Sokoni Logo" 
-                className="w-12 h-auto" 
-              />
               <h2 className="text-xl font-bold">CarSoko</h2>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

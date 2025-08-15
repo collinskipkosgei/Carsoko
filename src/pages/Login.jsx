@@ -26,11 +26,11 @@ export default function Login({ setIsLoggedIn }) {
       setIsLoggedIn(true);
       navigate("/featured", { replace: true });
     } else {
-      alert("❌ Invalid email or password");
+      alert("Invalid email or password");
     }
   } catch (error) {
     console.error("Login error:", error);
-    alert("⚠️ Unable to connect to server");
+    alert("Unable to connect to server");
   }
 };
 
@@ -94,12 +94,6 @@ export default function Login({ setIsLoggedIn }) {
           </p>
         </div>
       </div>
-
-      <footer className="bg-gray-800 text-white py-4 text-center">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} Soko Cars. All rights reserved.
-        </p>
-      </footer>
     </div>
   );
 }
