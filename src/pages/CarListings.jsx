@@ -1,12 +1,29 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { formatKES } from '../utils/formatCurrency';
 import { FaCar, FaGasPump, FaTachometerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 export default function CarListings() {
-  const { items: cars, loading, error } = useSelector(state => state.cars);
-  const [visibleCars, setVisibleCars] = React.useState(6);
+  const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [visibleCars, setVisibleCars] = useState(6);
+
+  useEffect(() => {
+    fetch('http://localhost:3300/cars')
+      .then(res => {
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then(data => {
+        setCars(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
 
   const loadMore = () => {
     setVisibleCars(prev => prev + 6);
@@ -21,7 +38,7 @@ export default function CarListings() {
   if (error) return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="text-red-600 text-center p-4 bg-red-50 rounded-lg">
-        Failed to load car listings. Please try again later.
+        Failed to load car listings. Please try again later.<br />{error}
       </div>
     </div>
   );
